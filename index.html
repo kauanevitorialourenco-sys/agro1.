@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho - Agro Futuro Sustentável</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#eef9ee;
+}
+
+header{
+background:linear-gradient(90deg,#1b5e20,#4caf50);
+color:white;
+padding:20px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+padding:10px 15px;
+border-radius:20px;
+transition:.3s;
+}
+
+nav a:hover{
+background:white;
+color:#1b5e20;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') center/cover;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+text-shadow:2px 2px 10px black;
+}
+
+.hero p{
+font-size:22px;
+margin-top:10px;
+}
+
+.mascote{
+position:fixed;
+right:20px;
+bottom:20px;
+font-size:80px;
+z-index:999;
+}
+
+.balao{
+position:absolute;
+bottom:90px;
+right:0;
+background:white;
+padding:15px;
+border-radius:15px;
+width:250px;
+box-shadow:0 0 15px rgba(0,0,0,.2);
+font-size:14px;
+color:black;
+}
+
+section{
+padding:50px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+color:#2e7d32;
+margin-bottom:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.info{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.info span{
+font-size:60px;
+display:block;
+}
+
+.quiz{
+background:white;
+padding:25px;
+border-radius:15px;
+}
+
+button{
+padding:12px 20px;
+border:none;
+background:#2e7d32;
+color:white;
+border-radius:10px;
+cursor:pointer;
+margin-top:15px;
+}
+
+button:hover{
+background:#1b5e20;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="#agro">Agro</a>
+<a href="#animais">Animais</a>
+<a href="#agrotoxicos">Agrotóxicos</a>
+<a href="#faep">FAEP</a>
+<a href="#quiz">Quiz</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>🌱 AGRO: FUTURO SUSTENTÁVEL</h1>
+<p>Equilíbrio entre Produção e Meio Ambiente</p>
+</div>
+
+<div class="mascote">
+👨‍🌾
+<div class="balao" id="fala">
+Olá! Sou o Agrozinho! Explore o projeto!
+</div>
+</div>
+
+<section id="agro">
+
+<h2>🌾 O Agro Brasileiro</h2>
+
+<div class="card">
+<p>
+O agronegócio é um dos pilares da economia brasileira.
+Ele produz alimentos, gera empregos e ajuda no desenvolvimento do país.
+Através do trabalho dos agricultores e pecuaristas, chegam à nossa mesa produtos como leite, carne, frutas, verduras, milho e soja.
+</p>
+</div>
+
+</section>
+
+<section id="animais">
+
+<h2>🐄 Animais do Campo</h2>
+
+<div class="grid">
+
+<div class="info">
+<span>🐄</span>
+<h3>Vacas</h3>
+<p>Produzem leite utilizado em diversos alimentos.</p>
+</div>
+
+<div class="info">
+<span>🐎</span>
+<h3>Cavalos</h3>
+<p>Importantes para o trabalho rural e esportes.</p>
+</div>
+
+<div class="info">
+<span>🐔</span>
+<h3>Galinhas</h3>
+<p>Produzem ovos consumidos diariamente.</p>
+</div>
+
+<div class="info">
+<span>🐑</span>
+<h3>Ovelhas</h3>
+<p>Fornecem lã e ajudam na produção rural.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="agrotoxicos">
+
+<h2>⚠️ Agrotóxicos</h2>
+
+<div class="card">
+
+<p>
+Os agrotóxicos ajudam a proteger plantações contra pragas e doenças.
+Seu uso deve ser realizado com orientação técnica e responsabilidade.
+</p>
+
+<p>
+Muitos produtores utilizam também alternativas sustentáveis como:
+</p>
+
+<ul>
+<li>🐞 Controle biológico</li>
+<li>🌱 Rotação de culturas</li>
+<li>🚜 Plantio direto</li>
+<li>💧 Irrigação eficiente</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="faep">
+
+<h2>🌾 FAEP</h2>
+
+<div class="card">
+
+<p>
+A FAEP (Federação da Agricultura do Estado do Paraná) representa produtores rurais e incentiva o desenvolvimento sustentável do campo.
+</p>
+
+<p>
+Ela apoia programas educacionais, capacitações, inovação tecnológica e iniciativas como o Agrinho.
+</p>
+
+<p>
+O Agrinho contribui para a formação de estudantes conscientes sobre cidadania, meio ambiente e sustentabilidade.
+</p>
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<h2>🏆 Quiz do Agro</h2>
+
+<div class="quiz">
+
+<p><strong>1. Qual é o objetivo da sustentabilidade?</strong></p>
+
+<input type="radio" name="q1" value="0"> Produzir sem limites<br>
+<input type="radio" name="q1" value="1"> Produzir preservando o meio ambiente<br>
+<input type="radio" name="q1" value="0"> Desmatar mais áreas<br>
+
+<button onclick="corrigir()">Ver Resultado</button>
+
+<h3 id="resultado"></h3>
+
+</div>
+
+</section>
+
+<footer>
+<h3>🌱 Projeto Agrinho</h3>
+<p>Agro: Futuro Sustentável - Equilíbrio entre Produção e Meio Ambiente</p>
+</footer>
+
+<script>
+
+const mensagens = [
+"🌱 A natureza é nossa parceira!",
+"🐄 As vacas ajudam na produção de leite!",
+"🚜 O campo utiliza muita tecnologia!",
+"🌾 O agro produz alimentos para todos!",
+"🌎 Sustentabilidade é fundamental!"
+];
+
+let pos = 0;
+
+setInterval(()=>{
+pos++;
+if(pos >= mensagens.length) pos = 0;
+document.getElementById("fala").innerHTML = mensagens[pos];
+},4000);
+
+function corrigir(){
+
+let r = document.querySelector('input[name="q1"]:checked');
+
+if(!r){
+document.getElementById("resultado").innerHTML =
+"Escolha uma resposta!";
+return;
+}
+
+if(r.value=="1"){
+document.getElementById("resultado").innerHTML =
+"✅ Parabéns! Resposta correta!";
+}else{
+document.getElementById("resultado").innerHTML =
+"❌ Resposta incorreta!";
+}
+
+}
+
+</script>
+
+</body>
+</html>
